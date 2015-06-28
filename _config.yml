@@ -1,0 +1,12 @@
+# Site settings
+title: Mr'kids note
+email: xudong82113@gmail.com 
+description: > # this means to ignore newlines until "baseurl:"
+  吴旭东的个人记录
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  wuxudong
+
+# Build settings
+markdown: kramdown
