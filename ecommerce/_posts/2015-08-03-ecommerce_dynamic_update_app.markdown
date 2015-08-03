@@ -64,3 +64,4 @@ gulp.task('default', function () {
 ```
 <allow-navigation href="*://*/*"/>
 ```
+
