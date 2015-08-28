@@ -19,6 +19,8 @@ categories: ecommerce
  ...
 </body>
 ```
+
+
  但由于使用cordova-app-loader后，我们一般在bootstrap.js中动态加载所需的js
  
 ```
@@ -32,7 +34,7 @@ categories: ecommerce
  
  可以在自己的app.js中手动初始化解决
 
-``` 
+```javascript
 angular.element(document).ready(function () {
     angular.bootstrap(document, ['starter']);
 });
@@ -59,9 +61,16 @@ gulp.task('default', function () {
  * 我自己环境搭地比较早，所以cordova是3.x版本的，项目也是在这个基础上开发，测试，发布到应用市场。
  * 在把整个工程环境共享给同事的过程中，发现同事本地无法运行，查了原因后，发现同事因为是最新安装，因此cordova版本为5.x，必须引入cordova-plugin-whitelist ，并做相应的配置(http-equiv="Content-Security-Policy" )才可成功运行。
  * 以为这样就大功告成了，后续的改动也直接发布到应用市场了。 但后续发现ios上动态更新正常，但android无法动态更新，花了2天的时间，最后发现仍然是cordova-plugin-whitelist禁止了cdvfile所致.
- *  在config.xml中添加
+ *  在config.xml中修改
 
 ```
 <allow-navigation href="*://*/*"/>
+```
+
+* 后续发现修改allow-navigation无法通过连接拨打电话，或发送短信。追查了一番后，修改为
+
+```
+<allow-navigation href="*"/>
+  <allow-navigation href="cdvfile://*"/>
 ```
 
