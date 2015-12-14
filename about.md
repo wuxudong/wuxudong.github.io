@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: no-about-page
 title: About
 permalink: /about/
+image: /images/pic02.jpg
 ---
 
-吴旭东
+WUXUDONG
