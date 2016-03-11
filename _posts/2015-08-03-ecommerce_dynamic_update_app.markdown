@@ -1,8 +1,17 @@
 ---
 layout: post
-title:  "动态APP更新"
-date:   2015-08-03 19:09:26
+title: 动态APP更新
+date: 2015-08-03T19:09:26.000Z
 categories: ecommerce
+comments:
+  - author:
+      type: full
+      displayName: wuxudong
+      url: 'https://github.com/wuxudong'
+      picture: 'https://avatars.githubusercontent.com/u/1391101?v=3&s=73'
+    content: '&#x5141;&#x8BB8;&#x52A8;&#x6001;&#x66F4;&#x65B0;&#x7684;&#x5EFA;&#x8BAE;&#x8BBE;&#x7ACB;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x5916;&#x90E8;app&#x7684;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x5185;&#x90E8;&#x52A8;&#x6001;&#x4EE3;&#x7801;&#x7684;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x66F4;&#x7075;&#x6D3B;&#x7684;&#x6839;&#x636E;&#x66F4;&#x65B0;&#x63A5;&#x53E3;&#x6765;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x5F3A;&#x5236;&#x66F4;&#x65B0;&#xFF0C;&#x63D0;&#x793A;&#x66F4;&#x65B0;&#x6216;&#x5FFD;&#x7565;&#x3002;'
+    date: 2016-03-11T04:03:13.689Z
+
 ---
 
 #App 动态更新
