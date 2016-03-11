@@ -1,8 +1,17 @@
 ---
 layout: post
-title:  "flashbot"
-date:   2015-12-13 13:09:26
-categories: android 
+title: flashbot
+date: 2015-12-13T13:09:26.000Z
+categories: android
+comments:
+  - author:
+      type: full
+      displayName: wuxudong
+      url: 'https://github.com/wuxudong'
+      picture: 'https://avatars.githubusercontent.com/u/1391101?v=3&s=73'
+    content: '&#x5F88;&#x6709;&#x610F;&#x601D;&#x7684;&#x5E94;&#x7528;'
+    date: 2016-03-11T03:58:54.813Z
+
 ---
 
 
