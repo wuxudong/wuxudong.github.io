@@ -6,9 +6,9 @@ categories: tech
 ---
 
 
-#多级混合式缓存
+# 多级混合式缓存
 
-##需求：
+## 需求：
 
 最早碰到这个问题是在豌豆荚的时候，另一个项目组里有个检测升级的服务。  
 这个api批量上传用户本地apk的package name以及版本号等信息，服务端将这些信息与信息库进行对比，检测是否有恶意或可升级的app。  
@@ -22,13 +22,13 @@ categories: tech
 - 数据量大
 - 不要求一致性，允许有短时间的信息不一致。
 
-##原始方案
+## 原始方案
 
 一开始是有个大的Terracotta ehcache集群，保存着整个信息库，大部分情况下运行正常，但是当数据越来越大时，Terracotta ehcache的__垃圾回收__产生了致命的停顿。  
 __商用版的 Terracotta ehcache集群__提供了额外的功能，可以减少垃圾回收产生的影响，但__收费不菲__。  
 同事也通过拆分Terracotta ehcache集群为几个小的集群来弱化GC和内存占用的影响，但也都治标不治本。
 
-##可能的方案
+## 可能的方案
 
 * 迁移到redis平台
 
@@ -41,7 +41,7 @@ __商用版的 Terracotta ehcache集群__提供了额外的功能，可以减少
   这个方案结合了redis和本地访问的优点，数据扩展方便，热点数据基本都在本地内存，访问速度也有保证。
   
 
-##实现
+## 实现
 
 参照spring RedisCache，实现了HybridCache，实际上它只是个代理类。  
 内部有两个成员: localCache, remoteCache.   
@@ -49,7 +49,7 @@ __商用版的 Terracotta ehcache集群__提供了额外的功能，可以减少
 发生数据更新时，先更新localCache和remoteCache，并向reids发送广播，通知其他实例数据失效。
 
 
-##后续
+## 后续
 
 用redis实现jsr的cache规范有个很大的缺点，cache规范里有cacheRegion的概念，不同CacheRegion不会互相影响，可以针对性地清空某个cacheRegion，这个在redis里实现起来特别低效。
 
@@ -61,7 +61,7 @@ spring-data-redis里对此的实现是，每个cacheRegion有个对应的list，
 
 或者为不同的CacheRegion配置不同的CacheManager，每个指向不同的redis实例，不过配置会麻烦一些。
 
-##其他
+## 其他
 
 后来发现oschina出品了一个J2Cache，和上面这个基本是类似的，只是它另起了一套接口，而不是实现spring的Cache接口，因此不能使用spring的cache annotation，这点个人并不喜欢。
 

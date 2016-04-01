@@ -5,7 +5,7 @@ date:   2015-06-30 17:31:26
 categories: ecommerce
 ---
 
-#APP技术方案
+# APP技术方案
 
 一般项目的移动APP包含android，ios，微信端。 
 外包公司人员齐备，开发人员20多人，自然不成问题。
@@ -14,7 +14,7 @@ categories: ecommerce
 
 在这种现状下，怎么去做一个电商的APP呢？
 
-##常见APP的可选技术方案:
+## 常见APP的可选技术方案:
 
 ### android, ios 采用native方案，微信采用web单独开发
 
