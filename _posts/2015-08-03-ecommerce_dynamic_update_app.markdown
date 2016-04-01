@@ -15,6 +15,7 @@ comments:
 ---
 
 #App 动态更新
+
 * 资料
  * https://github.com/markmarijnissen/cordova-app-loader
  * https://github.com/murlex/UpdatableApp

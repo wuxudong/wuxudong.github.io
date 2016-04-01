@@ -6,6 +6,7 @@ categories: ecommerce
 ---
 
 #APP技术方案
+
 一般项目的移动APP包含android，ios，微信端。 
 外包公司人员齐备，开发人员20多人，自然不成问题。
 
@@ -16,12 +17,14 @@ categories: ecommerce
 ##常见APP的可选技术方案:
 
 ### android, ios 采用native方案，微信采用web单独开发
+
 * 优点 ： native性能有保障 	
 * 缺点 ： 
   * 维护成本高，3个移动端都需要独立开发
   * 升级成本高，android易产生版本碎片化
 
 ### native + webview + remote webpage
+
 这种一般是用native来搭页面架子，页面中的部分元素使用webview来加载动态页面。
 
 在大公司里面这个方式用的比较多。
@@ -33,6 +36,7 @@ categories: ecommerce
   * 技术相对略复杂一些，native，html技术人员需要兼备。
 
 ### webview + remote webpage
+
 * 优点 ： 3端统一，远程更新内容
 * 缺点 ： 
   * ios禁止此种类型的app上线
@@ -40,12 +44,14 @@ categories: ecommerce
   * 部分native相关的功能(相机等等)，仍然需要native的开发
 
 ### cordova
+
 * 优点 ： 3端统一，丰富的插件支持常用的native功能
 * 缺点 ：
   * 在android上，部分机型性能差，有卡顿
   * 缺省的cordova方案，html/js/css代码也是打包在app中，因此也同样有版本升级问题，无法做到像remote webpage一样进行远程升级
 
 ## 最终方案
+
 在调研了相关的方案后，采用了ionic(基于cordova)方案，但采用插件达到remote webpage的效果。
 
 初始html/js/css代码打包在app中，在每次启动应用的时候，程序检查代码版本是否最新，如果发现html/js/css有改动，则自动下载最新代码替换本地的html/js/css，并reload page。
