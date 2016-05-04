@@ -16,7 +16,7 @@ Powerful blend of technology vision and business acumen results in consistent de
  
 Set up a technical team of 15 people, built enterprise systems that facilitate business processes and strategic objectives. Helped company increase turnover from 0 to 15 millions per month.
 
-Through online and offline analysis, established complete operating system, and automatic pipeline.
+Through online and offline analysis, established automatic pipeline system, greatly improved efficiency.
  
 Negotiated Cooperation with third-party companies, including outsourcing, data analysis platform etc. 
  
