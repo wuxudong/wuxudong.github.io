@@ -32,7 +32,7 @@ Designed and implemented core O2O system, including:
   
 Core developer of Blink Social App.
  
-Helped company set up office environment, including network, proxy, source control, mail etc.
+Built office, including network, proxy, source control, mail etc.
 
 * _social app Blink_ : a social media network used to send photos, videos that disappear after reading. 
    
@@ -42,7 +42,7 @@ Helped company set up office environment, including network, proxy, source contr
 
 Initially chartered to manage development of app market, gained NO.1 in market share with the help of early demographic dividend.  
 
-Improved app's performance, redesigned commucation protocol and double transmission speed between mobile and computer.
+Improved app's performance, redesigned communication protocol and double transmission speed between mobile and computer.
 
 Rebuilt Wandou social platform, including account, friends, share, comments etc.  
 
@@ -61,11 +61,11 @@ Two technology Patents:
  
 #### 2006.7 - 2011.8  Baidu Senior Software Engineer
 
-Member of commercial search technical committee, responsible for commucation and trainning of technical team.
+Member of commercial search technical committee, responsible for communication and trainning of technical team.
  
 Core developer of Baidu Key Account Ad System.
   
-Introduced a variety of ways to promote production efficiency: code style, remote debug, performance analysis, cross language commucation etc.  
+Introduced a variety of ways to promote production efficiency: code style, remote debug, performance analysis, cross language communication etc.  
 
 Introduced maven to Baidu Source Build System 
  
